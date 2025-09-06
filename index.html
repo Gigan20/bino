@@ -1,4 +1,5 @@
 <html id="H">
+
 <head>
     <title>bino</title><!--meta data-->
     <meta name="keywords" content="bino">
@@ -17,9 +18,10 @@
     <link href="https://v1.fontapi.ir/css/Mikhak:100;200;300;400;500;600;700;800;900" rel="stylesheet">
 </head>
 <style>
-    body{
-        padding:0 2rem;
+    body {
+        padding: 0 2rem;
     }
+
     .B_X {
         display: flex;
         width: 100%;
@@ -37,6 +39,7 @@
         color: #333;
         left: 0;
     }
+
     * {
         font-family: "mikhak", "Noto Emoji";
         font-weight: 400;
@@ -47,39 +50,76 @@
         line-height: 2;
         border: none;
     }
+
     .B_X img {
         width: 100px;
         height: auto;
         margin-bottom: 1rem;
     }
+
     .B_X .text {
         overflow: hidden;
         position: relative;
         padding: 1rem;
         margin: 0 2rem;
     }
+
     .B_X p {
         font-size: 13px;
         text-align: center;
         padding: 0;
         margin: .0;
     }
+
     .B_X h1 {
         font-size: 25px;
         text-align: center;
-        line-height:1.5;
+        position:relative;
         font-weight: 300;
-        padding: 1rem;
-        margin: .0;
+        line-height:1.5;
+        width:fit-content;
+        margin:0 0 1.5rem 0;
+        padding:.1rem 0;
     }
-    .B_X a{
-        color:#000;
-        transition:.3s;
-        padding:.5rem;
+    .B_X h1::after{
+        background:#111;
+        width:0%;
+        content:"";
+        position:absolute;
+        bottom:0;
+        right:0;
+        height:2px;
+        z-index:-1;
+        border-radius:5px;
+        animation:animation 2s .3s forwards;
     }
-    .B_X a:hover{
-        opacity:.7;
+    
+    @keyframes animation{
+        0%{right:100%;width:0%;}
+        20%{right:100%;width:0%;}
+        40%{right:0%;width:100%;}
+        80%{right:0%;width:100%;}
+        100%{width:49%;}
     }
+
+    .B_X a {
+        color: #000;
+        transition: .3s;
+        padding: .2rem 1rem;
+        width: 100px;
+        border-radius: 5px;
+        margin: 0 1rem;
+        display: inline-block;
+    }
+
+    .B_X a:hover {
+        background: #f8f8f8;
+    }
+
+    .B_X a:active {
+        transform: scale(.9);
+    }
+
     .B_X::after {
         position: absolute;
         bottom: 1rem;
@@ -91,20 +131,28 @@
         text-align: center;
         overflow: hidden;
     }
+
     .linkbx {
-        padding:2rem 1rem;
-        margin-top:1rem;
-        border-radius:5px;
-        border:#eee solid 1px;
+        background: #fff;
+        padding: .5rem 1rem !important;
+        margin-top: 3rem !important;
+        border-radius: 5px;
+        width: fit-content;
+        box-shadow: #0001 3px 3px 5px;
+        display: block;
+        color: #bbb;
     }
 </style>
+
 <body>
-    <div class="B_X"><img src="https://s34.picofile.com/file/8486559900/bino.png" alt="bino logo"/>
-        <div class="text">
-            <h1>THERE IS NOTHING</h1>
-            <p>This page is only for checking that my files are up to date and have the correct address.</p>
-          <p class="linkbx"><a href="/styles.css">styles.css</a> | <a href="/javascripts.js">javascripts.js</a></p>
+    <center>
+        <div class="B_X"><img src="https://s34.picofile.com/file/8486559900/bino.png" alt="bino logo" />
+            <div class="text">
+                <h1>THERE IS NOTHING</h1>
+                <p>This page is only for checking that my files are up to date and have the correct address.</p>
+                <p class="linkbx"><a href="./styles.css">styles.css</a> | <a href="./javascripts.js">javascripts.js</a></p>
+            </div>
         </div>
-    </div>
+    </center>
 </body>
 </html>
