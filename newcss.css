@@ -847,7 +847,7 @@ footer .cpyRit span{
 .drkMd .pstCntnt h1,.drkMd .pstCntnt h2,.drkMd .pstCntnt h3,.drkMd .pstCntnt h4,.drkMd .pstCntnt h5,.drkMd .pstCntnt h6{
     border-color: #fff;
 }
-.ldingPg::after{
+.drkMd .ldingPg::after{
     border-top:#fff 2px solid;
 }
 .drkMd .pstCntnt ul li::before,.drkMd .cpyRit span,.drkMd nav a:hover,.drkMd nav .lnks button:hover,.drkMd .ldingPg, .drkMd .pst .pstTg a:hover,.ldingPg::after{
